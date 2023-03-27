@@ -307,6 +307,24 @@ require(["esri/config","esri/views/MapView","esri/Map","esri/widgets/Feature",
 
 
     });
+            
+ featureTable.visibleElements = {
+  header: false,
+  menu: true,
+  menuItems: {
+    clearSelection: true,
+    deleteSelection: true, // Works if the layer supports deletion and editingEnabled property is true
+    refreshData: true,
+    toggleColumns: true,
+    selectedRecordsShowAllToggle: true,
+    selectedRecordsShowSelectedToggle: true,
+    zoomToSelection: true
+  },
+  selectionColumn: true,
+  columnMenus: true
+}
+            
+            
 
 
             
